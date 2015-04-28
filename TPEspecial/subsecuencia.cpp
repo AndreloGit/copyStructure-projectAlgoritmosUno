@@ -10,6 +10,10 @@ char Subsecuencia::getPrimero(){
 char Subsecuencia::getUltimo(){
     return this->spalabra[spalabra.length()-1];
 }
+string Subsecuencia::getSecuencia(){
+    return this->spalabra;
+}
+
 int Subsecuencia::getPeso(){
 
 }

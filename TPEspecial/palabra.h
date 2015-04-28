@@ -12,7 +12,7 @@ public:
     Palabra(string);
         string getPalabra();
         void setPalabra(string);
-        list<string> getSubsecuencias(int);
+        list<Subsecuencia> getSubsecuencias(int);
     ~Palabra();
 };
 

@@ -11,7 +11,9 @@ public:
     Subsecuencia(string);
     char getPrimero();
     char getUltimo();
+    string getSecuencia();
     getPeso();
+
     ~Subsecuencia();
 };
 
