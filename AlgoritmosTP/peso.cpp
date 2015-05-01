@@ -6,34 +6,33 @@
 #include <QTextStream>
 #include <QDebug>
 #include <QDir>
-Peso::Peso(const string path)
+#include <QStringList>
+#include <QMap>
+Peso::Peso(QString path)
 {
+    pChar = QMap<QChar,int>();
     QDir dir;
     dir.currentPath();
-    qDebug() << dir.currentPath();
-    pChar = map<char,int>();    
-    QFile *f= new QFile();
-    f->setFileName("pesos.txt");
+    qDebug() << dir.currentPath();        
+    QFile *f= new QFile(path);
     qDebug() << f->open(QIODevice::ReadOnly | QIODevice::Text);
     QString chain;
     QChar caracter;
-    QString peso;
+    QStringList peso;
     QTextStream tex(f);
     int pesoInt;
-    qDebug() << tex.readAll().toLatin1();
     while (!tex.atEnd()){
         chain = tex.readLine();
-        cout<< "asdasd";
-        caracter = chain[0];
-        /*peso = chain.substr(1,chain.length()-1); //el substring distinyo a [0] size-1.
-        pesoInt = atoi(peso.c_str());
-        cout << peso << endl;
-        pChar[caracter] = pesoInt;*/
+        peso = chain.split(':'); //el substring distinyo a [0] size-1.
+        caracter=peso[0].at(0);
+        pesoInt=peso[1].toInt();
+        qDebug() << peso << endl;
+        pChar[caracter] = pesoInt;
     }
     f->close();
 }
 
-int Peso::getPeso(char c){
+int Peso::getPeso(QChar c){
     return pChar[c];
 }
 

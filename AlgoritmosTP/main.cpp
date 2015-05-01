@@ -1,6 +1,6 @@
 #include <iostream>
 #include "palabra.h"
-#include "Subsecuencia.h"
+#include "subsecuencia.h"
 #include "peso.h"
 #include <iterator>
 using namespace std;
@@ -13,7 +13,7 @@ int main(int argc, const char* argv[])
 
         cout<<(*it).getSecuencia() << endl;
      }
-    Peso pe("pesos.txt");
+    Peso pe("pesos");
     cout << pe.getPeso('a')<< endl;
     cout << pe.getPeso('h')<< endl;
 

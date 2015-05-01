@@ -1,4 +1,4 @@
-#include "Subsecuencia.h"
+#include "subsecuencia.h"
 
 Subsecuencia::Subsecuencia(string ss)
 {

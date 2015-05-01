@@ -12,7 +12,7 @@ public:
     char getPrimero();
     char getUltimo();
     string getSecuencia();
-    getPeso();
+    int getPeso();
 
     ~Subsecuencia();
 };

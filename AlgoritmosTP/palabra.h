@@ -1,8 +1,8 @@
 #ifndef PALABRA_H
 #define PALABRA_H
-#include <String>
-#include <List>
-#include "Subsecuencia.h"
+#include <string>
+#include <list>
+#include "subsecuencia.h"
 using namespace std;
 class Palabra
 {

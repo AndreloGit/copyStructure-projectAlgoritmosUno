@@ -1,4 +1,4 @@
-#include "Palabra.h"
+#include "palabra.h"
 Palabra::Palabra(string s){
     cadena= s;
 }

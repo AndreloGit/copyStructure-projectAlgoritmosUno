@@ -1,16 +1,17 @@
 #ifndef PESO_H
 #define PESO_H
-#include <Map>
+#include <QMap>
 #include <iostream>
+#include <QString>
 using namespace std;
 
 class Peso
 {
 private:
-    map<char,int> pChar;
+    QMap<QChar,int> pChar;
 public:
-    Peso(string);
-    int getPeso(char);
+    Peso(QString);
+    int getPeso(QChar);
     ~Peso();
 };
 
