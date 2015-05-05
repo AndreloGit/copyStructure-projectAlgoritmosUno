@@ -18,9 +18,13 @@ TEMPLATE = app
 SOURCES += main.cpp \
     palabra.cpp \
     peso.cpp \
-    subsecuencia.cpp
+    subsecuencia.cpp \
+    algoritmo.cpp \
+    backtracking.cpp
 
 HEADERS += \
     palabra.h \
     peso.h \
-    subsecuencia.h
+    subsecuencia.h \
+    algoritmo.h \
+    backtracking.h
